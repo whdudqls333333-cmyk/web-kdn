@@ -61,6 +61,9 @@ input, textarea { font: inherit; }
   color: #fff;
   letter-spacing: -.01em;
 }
+.navbar-menu { display: flex; align-items: center; gap: .25rem; margin: 0 auto 0 1.5rem; }
+.navbar-menu-item { color: rgba(255,255,255,.85); font-size: .9rem; font-weight: 500; padding: .3rem .75rem; border-radius: 6px; transition: background .15s; }
+.navbar-menu-item:hover { background: rgba(255,255,255,.15); color: #fff; }
 .navbar-actions { display: flex; align-items: center; gap: .6rem; }
 .navbar-user { color: rgba(255,255,255,.8); font-size: .85rem; margin-right: .25rem; }
 
@@ -234,6 +237,45 @@ input, textarea { font: inherit; }
 .footer-divider { color: #D1D5DB; }
 .footer-copy { font-size: .75rem; color: #9CA3AF; }
 
+/* ─── About Page ─────────────────────────────────────────── */
+.about-profile-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, #172554 0%, #1E3A8A 50%, #1D4ED8 100%);
+  border-radius: var(--radius);
+  padding: 2rem;
+  margin-bottom: 1.75rem;
+  color: #fff;
+}
+.about-avatar { font-size: 4rem; width: 80px; height: 80px; background: rgba(255,255,255,.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid rgba(255,255,255,.3); flex-shrink: 0; }
+.about-name { font-size: 1.75rem; font-weight: 800; margin-bottom: .2rem; }
+.about-role { font-size: 1rem; opacity: .85; }
+.about-org  { font-size: .85rem; opacity: .65; margin-top: .2rem; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 1.25rem; }
+.about-section { margin-bottom: 0; }
+.about-section-title { font-size: 1rem; font-weight: 700; color: var(--primary-dark); border-left: 4px solid var(--primary); padding-left: .75rem; margin-bottom: .85rem; }
+.about-card { background: #fff; border: 1.5px solid var(--border); border-radius: var(--radius); padding: 1.25rem; height: 100%; }
+.about-info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+.about-info-item { display: flex; flex-direction: column; gap: .15rem; }
+.about-info-label { font-size: .72rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: .04em; }
+.about-info-value { font-size: .9rem; font-weight: 500; }
+.about-skill-group { margin-bottom: .85rem; }
+.about-skill-group:last-child { margin-bottom: 0; }
+.about-skill-category { font-size: .75rem; font-weight: 700; color: var(--text-muted); margin-bottom: .35rem; }
+.about-tags { display: flex; flex-wrap: wrap; gap: .35rem; }
+.about-tag { background: var(--primary-light); color: var(--primary); border: 1px solid var(--primary-border); border-radius: 999px; padding: .15rem .6rem; font-size: .78rem; font-weight: 500; }
+.about-timeline { display: flex; flex-direction: column; gap: .75rem; }
+.about-timeline-item { display: grid; grid-template-columns: 110px 1fr; gap: .75rem; align-items: start; }
+.about-timeline-year { font-size: .8rem; font-weight: 700; color: var(--primary); padding-top: .1rem; }
+.about-timeline-desc { font-size: .875rem; }
+.about-intro-text { font-size: .9rem; line-height: 1.85; }
+.about-quote { margin-top: 1rem; border-left: 3px solid var(--primary-mid); padding-left: 1rem; color: var(--text-muted); font-style: italic; font-size: .875rem; }
+.about-contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.about-contact-item { background: var(--primary-light); border-radius: var(--radius); padding: 1rem; text-align: center; border: 1px solid var(--primary-border); }
+.about-contact-label { font-size: .72rem; font-weight: 700; color: var(--text-muted); margin-bottom: .3rem; }
+.about-contact-value { font-size: .875rem; font-weight: 600; color: var(--primary); }
+
 /* ─── Responsive ─────────────────────────────────────────── */
 @media (max-width: 640px) {
   .card-grid { grid-template-columns: 1fr; }
@@ -241,4 +283,10 @@ input, textarea { font: inherit; }
   .auth-card { padding: 1.75rem 1.25rem; }
   .navbar-user { display: none; }
   .pagination { gap: .3rem; }
+  .about-profile-card { flex-direction: column; text-align: center; }
+  .about-grid { grid-template-columns: 1fr; }
+  .about-info-grid { grid-template-columns: 1fr; }
+  .about-contact-grid { grid-template-columns: 1fr; }
+  .about-timeline-item { grid-template-columns: 90px 1fr; }
+  .navbar-menu { margin-left: .75rem; }
 }

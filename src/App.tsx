@@ -9,6 +9,7 @@ import PostCreate from './pages/PostCreate'
 import PostEdit from './pages/PostEdit'
 import Login from './pages/Login'
 import Register from './pages/Register'
+import About from './pages/About'
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
             <Route path="/posts/:id" element={<PostDetail />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </main>
         <Footer />
