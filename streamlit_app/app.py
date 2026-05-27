@@ -50,7 +50,7 @@ with col_left:
     st.markdown("""
     <div class="profile-card">
       <div style="font-size:5rem; margin-bottom:.5rem;">👤</div>
-      <div class="profile-name">홍 길 동</div>
+      <div class="profile-name">조 영 빈</div>
       <div class="profile-role">AI 활용 교육 담당자</div>
       <br>
       <div style="opacity:.75; font-size:.85rem;">KDN · 한국전력기술</div>
@@ -62,7 +62,7 @@ with col_right:
     st.markdown("""
     <div class="info-row"><span class="info-label">소속</span> 한국전력기술(KDN) AI 교육팀</div>
     <div class="info-row"><span class="info-label">직책</span> 교육 담당자</div>
-    <div class="info-row"><span class="info-label">이메일</span> hongildong@kdn.com</div>
+    <div class="info-row"><span class="info-label">이메일</span> youngbin@kdn.com</div>
     <div class="info-row"><span class="info-label">관심분야</span> AI 활용, 데이터 분석, 업무 자동화</div>
     """, unsafe_allow_html=True)
 
@@ -111,7 +111,7 @@ st.divider()
 # ── 자기소개 ────────────────────────────────────────────────
 st.markdown('<div class="section-title">📝 자기소개</div>', unsafe_allow_html=True)
 st.markdown("""
-안녕하세요. 한국전력기술(KDN)에서 AI 활용 교육을 담당하고 있는 홍길동입니다.
+안녕하세요. 한국전력기술(KDN)에서 AI 활용 교육을 담당하고 있는 조영빈입니다.
 
 저는 **AI 도구를 실무에 접목**하여 조직의 생산성을 높이는 일에 관심이 많습니다.
 ChatGPT, Claude 등 생성형 AI를 활용한 업무 자동화 사례를 발굴하고,
@@ -125,6 +125,6 @@ st.divider()
 # ── 연락처 ──────────────────────────────────────────────────
 st.markdown('<div class="section-title">📬 연락처</div>', unsafe_allow_html=True)
 c1, c2, c3 = st.columns(3)
-c1.metric("이메일", "hongildong@kdn.com")
+c1.metric("이메일", "youngbin@kdn.com")
 c2.metric("부서", "AI 교육팀")
 c3.metric("전화", "031-8045-XXXX")
