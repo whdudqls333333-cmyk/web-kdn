@@ -18,13 +18,13 @@ export default function App() {
         <Navbar />
         <main className="main">
           <Routes>
-            <Route path="/" element={<PostList />} />
+            <Route path="/" element={<About />} />
+            <Route path="/posts" element={<PostList />} />
             <Route path="/posts/create" element={<ProtectedRoute><PostCreate /></ProtectedRoute>} />
             <Route path="/posts/:id/edit" element={<ProtectedRoute><PostEdit /></ProtectedRoute>} />
             <Route path="/posts/:id" element={<PostDetail />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/about" element={<About />} />
           </Routes>
         </main>
         <Footer />

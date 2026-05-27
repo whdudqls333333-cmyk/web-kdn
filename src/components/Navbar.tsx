@@ -13,9 +13,10 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="container navbar-inner">
-        <Link to="/" className="navbar-brand">게시판</Link>
+        <Link to="/" className="navbar-brand">KDN</Link>
         <div className="navbar-menu">
-          <Link to="/about" className="navbar-menu-item">자기소개</Link>
+          <Link to="/" className="navbar-menu-item">자기소개</Link>
+          <Link to="/posts" className="navbar-menu-item">게시판</Link>
         </div>
         <div className="navbar-actions">
           {user ? (

@@ -73,7 +73,7 @@ export default function PostDetail() {
     <div className="container page">
       <div className="post-detail">
         <div className="post-detail-header">
-          <Link to="/" className="back-link">← 목록으로</Link>
+          <Link to="/posts" className="back-link">← 목록으로</Link>
           {user?.id === post.author_id && (
             <div className="post-actions">
               <Link to={`/posts/${id}/edit`} className="btn btn-outline btn-sm">수정</Link>
