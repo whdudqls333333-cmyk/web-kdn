@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/self-test/',
+  base: '/web-kdn/',
   server: { port: 5173 }
 })
